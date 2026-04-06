@@ -1,26 +1,55 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-simi: #AE080B;
+  --color-simi-light: #D41215;
+  --color-simi-dark: #8A0609;
+  --color-simi-dim: #1A0808;
+  --color-gold: #C59D29;
+  --color-gold-dim: #1A1508;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-surface: #0B0C0F;
+  --color-surface-raised: #12141A;
+  --color-surface-hover: #181B23;
+  --color-surface-card: #151720;
+  --color-border: #1E2130;
+  --color-border-light: #282C3C;
+
+  --color-text-primary: #E8ECEF;
+  --color-text-secondary: #8899A6;
+  --color-text-muted: #556070;
+
+  --color-danger: #EF4444;
+  --color-warning: #F59E0B;
+  --color-success: #10B981;
+  --color-info: #06B6D4;
+
+  --color-fabricated: #3B82F6;
+  --color-purchased: #F97316;
+  --color-hardware: #6B7280;
+
+  --color-background: var(--color-surface);
+  --color-foreground: var(--color-text-primary);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-surface);
+  color: var(--color-text-primary);
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-border-light) transparent;
+  }
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 2s ease-in-out infinite;
 }
