@@ -4,28 +4,28 @@
   --color-simi: #AE080B;
   --color-simi-light: #D41215;
   --color-simi-dark: #8A0609;
-  --color-simi-dim: #1A0808;
+  --color-simi-dim: #FEF2F2;
   --color-gold: #C59D29;
-  --color-gold-dim: #1A1508;
+  --color-gold-dim: #FDF8E8;
 
-  --color-surface: #0B0C0F;
-  --color-surface-raised: #12141A;
-  --color-surface-hover: #181B23;
-  --color-surface-card: #151720;
-  --color-border: #1E2130;
-  --color-border-light: #282C3C;
+  --color-surface: #F8F9FB;
+  --color-surface-raised: #FFFFFF;
+  --color-surface-hover: #F1F3F5;
+  --color-surface-card: #FFFFFF;
+  --color-border: #E2E5EA;
+  --color-border-light: #D0D5DD;
 
-  --color-text-primary: #E8ECEF;
-  --color-text-secondary: #8899A6;
-  --color-text-muted: #556070;
+  --color-text-primary: #1A1D23;
+  --color-text-secondary: #4B5563;
+  --color-text-muted: #9CA3AF;
 
-  --color-danger: #EF4444;
-  --color-warning: #F59E0B;
-  --color-success: #10B981;
-  --color-info: #06B6D4;
+  --color-danger: #DC2626;
+  --color-warning: #D97706;
+  --color-success: #059669;
+  --color-info: #0891B2;
 
-  --color-fabricated: #3B82F6;
-  --color-purchased: #F97316;
+  --color-fabricated: #2563EB;
+  --color-purchased: #EA580C;
   --color-hardware: #6B7280;
 
   --color-background: var(--color-surface);
